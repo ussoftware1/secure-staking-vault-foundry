@@ -1,0 +1,27 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = []
+test = "test"
+script = "script"
+solc_version = "0.8.24"
+optimizer = true
+optimizer_runs = 200
+via_ir = false
+verbosity = 2
+
+[fuzz]
+runs = 256
+
+[invariant]
+runs = 128
+depth = 32
+
+[fmt]
+line_length = 120
+tab_width = 4
+bracket_spacing = true
+int_types = "long"
+multiline_func_header = "params_first"
+quote_style = "double"
+number_underscore = "thousands"
